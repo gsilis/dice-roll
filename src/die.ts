@@ -1,4 +1,7 @@
 import { DIE } from "./die-face";
+import { sample } from "./random";
+
+const FACES: DIE[] = [1, 2, 3, 4, 5, 6]
 
 export class Die {
   face?: DIE
@@ -12,6 +15,6 @@ export class Die {
   }
 
   roll() {
-    
+    this.face = sample(FACES)
   }
 }
