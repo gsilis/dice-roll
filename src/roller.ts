@@ -10,6 +10,14 @@ export class Roller {
     }
   }
 
+  get faces() {
+    return this.values()
+  }
+
+  get value() {
+    return this.sum()
+  }
+
   roll() {
     this.dice.forEach(d => d.roll())
   }
