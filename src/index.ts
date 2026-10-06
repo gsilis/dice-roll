@@ -1,7 +1,2 @@
-import { Die } from "./die";
-import { Roller } from "./roller";
-
-export default {
-  Roller,
-  Die,
-}
+export { Die } from "./die";
+export { Roller } from "./roller";
